@@ -63,8 +63,12 @@
 
       <!-- Footer Legal -->
       <footer class="footer">
-        <p>&copy; 2025 <strong>NoLatech</strong>. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> <strong>NoLatech</strong>. All rights reserved.</p>
       </footer>
+
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
 
     </div>
   </div>
